@@ -1,0 +1,46 @@
+{
+  "packages": [
+    {
+      "name": "MyDuino",
+      "maintainer": "Václav Valíček",
+      "websiteURL": "https://github.com/valicek1/myduino",
+      "email": "vaclav@valicek.name",
+      "help": {
+        "online": "https://github.com/valicek1/myduino"
+      },
+      "platforms": [
+        {
+          "name": "MyDuino",
+          "architecture": "avr",
+          "version": "1.0.0",
+          "category": "MyDuino",
+          "help": {
+            "online": "https://github.com/valicek1/myduino"
+          },
+          "url": "https://github.com/valicek1/myduino/releases/download/1.0.0/Myduino.zip",
+          "archiveFileName": "Myduino.zip",
+          "checksum": "SHA-256:1bfe7707894907a2792884fc726e1fe9251842fac75eaf5ef451bba0c18cbb4e",
+          "size": "92824",
+          "boards": [
+            {
+              "name": "Atmega8 Noxtal"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "4.8.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.0.1-arduino5"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
