@@ -4,34 +4,22 @@ menu.cpu=Processor
 
 
 ##############################################################
+# Atmega8, noXtal, extended pins, 8Mhz Internal Oscilator
 
-Tuno.name=Arduino Tuno
+m8noxtal.name=Atmega8 Noxtal
 
-Tuno.vid.0=0x2341
-Tuno.pid.0=0x0043
-Tuno.vid.1=0x2341
-Tuno.pid.1=0x0001
-Tuno.vid.2=0x2A03
-Tuno.pid.2=0x0043
+m8noxtal.upload.tool=avrdude
+m8noxtal.upload.protocol=usbasp
 
-Tuno.upload.tool=avrdude
-Tuno.upload.protocol=arduino
-Tuno.upload.maximum_size=32256
-Tuno.upload.maximum_data_size=2048
-Tuno.upload.speed=115200
 
-Tuno.bootloader.tool=avrdude
-Tuno.bootloader.low_fuses=0xFF
-Tuno.bootloader.high_fuses=0xDE
-Tuno.bootloader.extended_fuses=0x05
-Tuno.bootloader.unlock_bits=0x3F
-Tuno.bootloader.lock_bits=0x0F
-Tuno.bootloader.file=optiboot/optiboot_atmega328.hex
+m8noxtal.build.mcu=atmegang
+m8noxtal.build.f_cpu=8000000L
+m8noxtal.build.board=AVR_NG
+m8noxtal.build.core=arduino
 
-Tuno.build.mcu=atmega328p
-Tuno.build.f_cpu=16000000L
-Tuno.build.board=AVR_Tuno
-Tuno.build.core=arduino
-Tuno.build.variant=standard
+m8noxtal.maximum_size=8192
+m8noxtal.upload.maximum_data_size=1024
 
+m8noxtal.build.mcu=atmega8
+m8noxtal.variant=m8-noxtal
 
