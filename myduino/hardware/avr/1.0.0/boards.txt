@@ -1,0 +1,37 @@
+# See: http://code.google.com/p/arduino/wiki/Platforms
+
+menu.cpu=Processor
+
+
+##############################################################
+
+Tuno.name=Arduino Tuno
+
+Tuno.vid.0=0x2341
+Tuno.pid.0=0x0043
+Tuno.vid.1=0x2341
+Tuno.pid.1=0x0001
+Tuno.vid.2=0x2A03
+Tuno.pid.2=0x0043
+
+Tuno.upload.tool=avrdude
+Tuno.upload.protocol=arduino
+Tuno.upload.maximum_size=32256
+Tuno.upload.maximum_data_size=2048
+Tuno.upload.speed=115200
+
+Tuno.bootloader.tool=avrdude
+Tuno.bootloader.low_fuses=0xFF
+Tuno.bootloader.high_fuses=0xDE
+Tuno.bootloader.extended_fuses=0x05
+Tuno.bootloader.unlock_bits=0x3F
+Tuno.bootloader.lock_bits=0x0F
+Tuno.bootloader.file=optiboot/optiboot_atmega328.hex
+
+Tuno.build.mcu=atmega328p
+Tuno.build.f_cpu=16000000L
+Tuno.build.board=AVR_Tuno
+Tuno.build.core=arduino
+Tuno.build.variant=standard
+
+
